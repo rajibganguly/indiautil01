@@ -1,0 +1,22 @@
+{
+  "name": "turing-app",
+  "version": "1.0.0",
+  "description": "ecommerce site",
+  "main": "index.js",
+  "scripts": {},
+  "author": "onezerodesigns@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^4.3.1",
+    "jquery": "^1.9.1",
+    "popper.js": "^1.14.7"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "^5.7.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-uglify": "^3.0.2",
+    "gulp-util": "^3.0.8"
+  }
+}
