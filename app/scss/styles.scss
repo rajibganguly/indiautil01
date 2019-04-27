@@ -1,10 +1,8 @@
-@import '../../node_modules/bootstrap/scss/bootstrap';
-@import '../../node_modules/bootstrap/scss/bootstrap-grid';
-@import './animate';
-
+@import url('../../node_modules/bootstrap/scss/bootstrap');
+@import url('../../node_modules/bootstrap/scss/bootstrap-grid');
+@import url('./animate');
 $white: #FFF;
 $black: #000;
-
 $col-dot-blue: #6eb2fb;
 $col-dot-green: #7ed321;
 $col-dot-red: #f62f5e;
@@ -12,407 +10,382 @@ $col-dot-orange: #fe5c07;
 $col-dot-yellow: #f8e71c;
 $col-dot-phirozi: #00d3ca;
 $col-dot-purple: #9013fe;
-
 body {
- background: lighten($black, 82%);
- .bg-light-gray {
-	background: lighten($black, 90%);
- }
- .special-title {
-    font-size: 3.8em;
-    color: black;
-    font-family: times;
-    font-weight: 800;
- }
- .full-width {
-	width:100%;	
- } 
- .title-box1 {
-	width: 57%;
-    margin: 0 auto;
- }
- .selectbox {
-	border-radius: 16px;
-    padding: 7px;
-    font-size: 0.8em;
- }
- .cust-email {
-	width: 56%;
-	border-radius: 25px;
-	float: right;
-	margin-right: 12px;
- }
- .autombt-1 {
-    margin-bottom: 3.5em !important;
- }
- .bg-light {
-    background-color: $white !important;
-	}
-	.logo {
-		text-transform: uppercase;
-		font-size: 1.5em;
-		letter-spacing: 0.3em;
-		font-weight: bold;
-	}
-	.cust-sreachbox {
-		position: relative;
-		[type="search"] {
-			background: darken($white, 20%);		
-			border-radius: 3em;
-			border: none;
-			color: $white;
-			padding-left: 40px;
-			&:focus {
-				@include rubberBand();
-			}
-			&::placeholder {
-			  color: $white;
-			  opacity: 1;
-			}
-			&:-ms-input-placeholder { 
-			  color: $white;
-			}
-			&::-ms-input-placeholder { 
-			  color: $white;
-			}
-		}
-		button.search-btn {
-			background: url(./icon/icons-search-white.png) 0 0 no-repeat;
-			width: 20px;
-			height:20px;
-			display: inline-block;
-			position:absolute;
-			left:12px;
-		}
-		
-	}
-	.cust-emailbox {
-		position: relative;
-		[type="email"] {
-			background: $white;		
-			border-radius: 3em;
-			border: none;
-			color: darken($black, 20%);
-			padding-left: 50px;
-			&:focus {
-				@include rubberBand();
-			}
-			&:focus {
-				@include rubberBand();
-			}
-			&::placeholder {
-			  color: darken($black, 20%);
-			  opacity: 1;
-			}
-			&:-ms-input-placeholder { 
-			  color: darken($black, 20%);
-			}
-			&::-ms-input-placeholder { 
-			  color: darken($black, 20%);
-			}
-		}
-		button.email-btn {
-			background: url(./icon/icons-email-black.png) 0 0 no-repeat;
-			width: 20px;
-			height:20px;
-			display: inline-block;
-			position:absolute;
-			left:12px;
-		}
-		
-	}
-	.cust-button {
-		border-radius: 2em;
-		background: $col-dot-red;
-		color: #fff;
-		width: 111px;
-		margin: 1em auto;
-		padding: 0.8em 1.2em;
-		font-weight: bold;
-		font-size: 0.8em;
-		border: none;
-		&:focus {
-				@include rubberBand();
-			}
-	}
-	
-	
-	.page {
-		.inline-lists {
-			font-weight:bold;
-			padding-left: 0;
-			margin-bottom: 0;
-			li {
-				display: inline-block;
-				a {
-					color: $white;
-					padding: 0.2em 0.8em;
-					font-size: 1.05em;
-				}
-			}
-		}
-		/*img.full-width {
-			  @include bounceInLeft();
-		 }*/
-		.icons-bag {
-			background: url(./icon/icons-bag-white.png) 0 0 no-repeat;
-			width: 20px;
-			height:20px;
-			display: inline-block;
-			.badge {
-				position: absolute;
-				z-index: 2;
-			}
-		}
-		header {
-			.inline-lists {
-				li {
-					a {
-						color: $black;
-					}
-				}
-			}
-			.title {
-				font-weight: bold;
-				font-size: 1.1em;
-			}
-			
-			.flag-eng {
-				background: url(./icon/gbr.png) 0 0 no-repeat;
-				width: 20px;
-				height:20px;
-				display: inline-block;
-			}
-			.icons-bag {
-				background: url(./icon/icons-bag.png);			
-			}
-			
-		}
-		.main {
-			background: darken($white, 5%);	
-			.jumbotron {
-				ul {
-					padding-left:0;
-					float:left;
-					margin-right: 6em;
-					font-weight: bold;
-					li {
-						list-style-type: none;
-					}
-				}
-			}
-			div.bx {
-				background: $white;
-				box-shadow: 0 0 10px lighten($black, 95%);
-				min-height: 355px;
-				transition: box-shadow .5s ease-in-out;
-				.bg-img2 {
-					background: linear-gradient(rgba(255,255,255,.9), rgba(255,255,255,.9)), url(./Images/images-shirt10.png) center 50px no-repeat;
-				}
-			}
-			div.bx:hover {
-				box-shadow: 0 0 50px lighten($black, 40%);
-				transition: box-shadow .15s ease-in-out;
-				
-			}			
-			ul.icons-close-small-black {
-				padding-left:20px;
-				list-style:none;
-				li {
-					padding-left: 25px;
-					background: url(./icon/icons-close-small-black.png) 0 5px no-repeat;
-				}
-			}
-			.colors {
-			padding-left:0;
-				li {
-					display: inline-block;
-					width:22px;
-					height:22px;
-					border-radius:20px;
-					border:4px solid $white;
-					outline: none;
-					&.active {
-						box-shadow: 0 0 2px lighten($black, 20%);
-					}
-				}
-				li.c1 {
-					background: $col-dot-blue;
-				}
-				li.c2 {
-					background: $col-dot-phirozi;
-				}
-				li.c3 {
-					background: $col-dot-red;
-				}
-				li.c4 {
-					background: $col-dot-orange;
-				}
-				li.c5 {
-					background: $col-dot-yellow;
-				}
-				li.c6 {
-					background: $col-dot-green;
-				}
-				li.c7 {
-					background: $col-dot-purple;
-				}
-			}
-			.card {
-				.scroll-box-brands {
-					width:100%;
-					height:124px;
-					overflow-x:hidden;
-					overflow-y: scroll;
-				}
-				.cust-size-sets {
-					background: lighten($black, 90%);
-					width: 90%;
-					word-break: normal;
-					border: none;
-					margin: 5%;
-					font-size: 0.8em;
-					color: lighten($black, 40%);
-					border-radius: 0.25em;
-					text-align: center;
-					padding: 2px 5px;
-					&.select {
-						background: $col-dot-red;
-						color: $white;
-					}
-				}
-			}
-			.form-check-brnd {
-				padding-left: 0rem;
-				/* Customize the label */
-				.containerbox {
-				  display: block;
-				  position: relative;
-				  padding-left: 30px;
-				  margin-bottom: 4px;
-				  cursor: pointer;
-				  -webkit-user-select: none;
-				  -moz-user-select: none;
-				  -ms-user-select: none;
-				  user-select: none;
-				  font-size: 0.9em;
-				  label {
-				  margin-bottom: 0;
-				  }
-					input {
-					  position: absolute;
-					  opacity: 0;
-					  cursor: pointer;
-					  height: 0;
-					  width: 0;
-					}
-					/* Create a custom checkbox */
-					.checkmark {
-					  position: absolute;
-					  top: 1px;
-					  left: 0;
-					  height: 20px;
-					  width: 20px;
-					  background-color: #eee;
-					  border-radius: 5px;
-					}
-
-					/* On mouse-over, add a grey background color */
-					&:hover input ~ .checkmark {
-					  background-color: #ccc;
-					}
-
-					/* When the checkbox is checked, add a blue background */
-					input:checked ~ .checkmark {
-					  background-color: $col-dot-blue;
-					}
-
-					/* Create the checkmark/indicator (hidden when not checked) */
-					.checkmark:after {
-					  content: "";
-					  position: absolute;
-					  display: none;
-					}
-
-					/* Show the checkmark when checked */
-					input:checked ~ .checkmark:after {
-					  display: block;
-					}
-
-					/* Style the checkmark/indicator */
-					.checkmark:after {
-					  left: 9px;
-					  top: 5px;
-					  width: 5px;
-					  height: 10px;
-					  border: solid white;
-					  border-width: 0 3px 3px 0;
-					  -webkit-transform: rotate(45deg);
-					  -ms-transform: rotate(45deg);
-					  transform: rotate(45deg);
-					}
-				}
-				
-			}
-			.left-title-on-card {
-				color: lighten($black, 80%);
-				margin-bottom: 15px;
-			}
-		}
-	}
-	footer {
-		background: darken($black, 80%);
-		color: $white;
-		.footer-links {
-			list-style: none;
-			%icons-class {
-				width: 40px;
-				height: 40px;
-				display: block;
-			}
-			li {
-				display: inline-block;
-				font-size:1.4em;
-				font-weight: 500;
-				padding: 1.5em 2.1em;
-				a.icons-instagram {
-					@extend %icons-class;
-					background: url(./icon/icons-instagram-black.png) 0 0 no-repeat;
-					&:hover {
-						@include flip();
-						background: url(./icon/icons-instagram-black.png) 0 0 no-repeat;
-					}
-				}
-				a.icons-pinterest {
-					@extend %icons-class;
-					background: url(./icon/icons-pinterest-black.png) 0 0 no-repeat;
-					&:hover {
-						@include flip();
-						background: url(./icon/icons-pinterest-black.png) 0 0 no-repeat;
-					}
-				}
-				a.icons-twitter {
-					@extend %icons-class;
-					background: url(./icon/icons-twitter-black.png) 0 0 no-repeat;
-					&:hover {
-						@include flip();
-						background: url(./icon/icons-twitter-black.png) 0 0 no-repeat;
-					}
-				}
-				a.icons-facebook {
-					@extend %icons-class;
-					background: url(./icon/icons-facebook-black.png) 0 0 no-repeat;
-					&:hover {
-						@include flip();
-						background: url(./icon/icons-facebook-black.png) 0 0 no-repeat;						
-					}
-				}
-			}
-		}
-	}
-	
-	.header-image {
-			background: #A3A19E url(./Images/Images-modal4.png) right top no-repeat;
-			height: 336px;
-	}
+    background: lighten($black,82%);
+    .bg-light-gray {
+        background: lighten($black,90%);
+    }
+    .special-title {
+        font-size: 3.8em;
+        color: black;
+        font-family: times;
+        font-weight: 800;
+    }
+    .full-width {
+        width: 100%;
+    }
+    .title-box1 {
+        width: 57%;
+        margin: 0 auto;
+    }
+    .selectbox {
+        border-radius: 16px;
+        padding: 7px;
+        font-size: 0.8em;
+    }
+    .cust-email {
+        width: 56%;
+        border-radius: 25px;
+        float: right;
+        margin-right: 12px;
+    }
+    .autombt-1 {
+        margin-bottom: 3.5em !important;
+    }
+    .bg-light {
+        background-color: $white !important;
+    }
+    .logo {
+        text-transform: uppercase;
+        font-size: 1.5em;
+        letter-spacing: 0.3em;
+        font-weight: bold;
+    }
+    .cust-sreachbox {
+        position: relative;
+        [type="search"] {
+            background: darken($white,20%);
+            border-radius: 3em;
+            border: none;
+            color: $white;
+            padding-left: 40px;
+            &:focus {
+                @include rubberBand();
+            }
+            &::placeholder {
+                color: $white;
+                opacity: 1;
+            }
+            &:-ms-input-placeholder {
+                color: $white;
+            }
+            &::-ms-input-placeholder {
+                color: $white;
+            }
+        }
+        button.search-btn {
+            background: url(./icon/icons-search-white.png) 0 0 no-repeat;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            position: absolute;
+            left: 12px;
+        }
+    }
+    .cust-emailbox {
+        position: relative;
+        [type="email"] {
+            background: $white;
+            border-radius: 3em;
+            border: none;
+            color: darken($black,20%);
+            padding-left: 50px;
+            &:focus {
+                @include rubberBand();
+            }
+            &:focus {
+                @include rubberBand();
+            }
+            &::placeholder {
+                color: darken($black,20%);
+                opacity: 1;
+            }
+            &:-ms-input-placeholder {
+                color: darken($black,20%);
+            }
+            &::-ms-input-placeholder {
+                color: darken($black,20%);
+            }
+        }
+        button.email-btn {
+            background: url(./icon/icons-email-black.png) 0 0 no-repeat;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            position: absolute;
+            left: 12px;
+        }
+    }
+    .cust-button {
+        border-radius: 2em;
+        background: $col-dot-red;
+        color: #fff;
+        width: 111px;
+        margin: 1em auto;
+        padding: 0.8em 1.2em;
+        font-weight: bold;
+        font-size: 0.8em;
+        border: none;
+        &:focus {
+            @include rubberBand();
+        }
+    }
+    .page {
+        .inline-lists {
+            font-weight: bold;
+            padding-left: 0;
+            margin-bottom: 0;
+            li {
+                display: inline-block;
+                a {
+                    color: $white;
+                    padding: 0.2em 0.8em;
+                    font-size: 1.05em;
+                }
+            }
+        }
+        .icons-bag {
+            background: url(./icon/icons-bag-white.png) 0 0 no-repeat;
+            width: 20px;
+            height: 20px;
+            display: inline-block;
+            .badge {
+                position: absolute;
+                z-index: 2;
+            }
+        }
+        header {
+            .inline-lists {
+                li {
+                    a {
+                        color: $black;
+                    }
+                }
+            }
+            .title {
+                font-weight: bold;
+                font-size: 1.1em;
+            }
+            .flag-eng {
+                background: url(./icon/gbr.png) 0 0 no-repeat;
+                width: 20px;
+                height: 20px;
+                display: inline-block;
+            }
+            .icons-bag {
+                background: url(./icon/icons-bag.png);
+            }
+        }
+        .main {
+            background: darken($white,5%);
+            .jumbotron {
+                ul {
+                    padding-left: 0;
+                    float: left;
+                    margin-right: 6em;
+                    font-weight: bold;
+                    li {
+                        list-style-type: none;
+                    }
+                }
+            }
+            div.bx {
+                background: $white;
+                box-shadow: 0 0 10px lighten($black,95%);
+                min-height: 355px;
+                transition: box-shadow .5s ease-in-out;
+                .bg-img2 {
+                    background: linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)),url(./Images/images-shirt10.png) center 50px no-repeat;
+                }
+            }
+            div.bx:hover {
+                box-shadow: 0 0 50px lighten($black,40%);
+                transition: box-shadow .15s ease-in-out;
+            }
+            ul.icons-close-small-black {
+                padding-left: 20px;
+                list-style: none;
+                li {
+                    padding-left: 25px;
+                    background: url(./icon/icons-close-small-black.png) 0 5px no-repeat;
+                }
+            }
+            .colors {
+                padding-left: 0;
+                li {
+                    display: inline-block;
+                    width: 22px;
+                    height: 22px;
+                    border-radius: 20px;
+                    border: 4px solid $white;
+                    outline: none;
+                    &.active {
+                        box-shadow: 0 0 2px lighten($black,20%);
+                    }
+                }
+                li.c1 {
+                    background: $col-dot-blue;
+                }
+                li.c2 {
+                    background: $col-dot-phirozi;
+                }
+                li.c3 {
+                    background: $col-dot-red;
+                }
+                li.c4 {
+                    background: $col-dot-orange;
+                }
+                li.c5 {
+                    background: $col-dot-yellow;
+                }
+                li.c6 {
+                    background: $col-dot-green;
+                }
+                li.c7 {
+                    background: $col-dot-purple;
+                }
+            }
+            .card {
+                .scroll-box-brands {
+                    width: 100%;
+                    height: 124px;
+                    overflow-x: hidden;
+                    overflow-y: scroll;
+                }
+                .cust-size-sets {
+                    background: lighten($black,90%);
+                    width: 90%;
+                    word-break: normal;
+                    border: none;
+                    margin: 5%;
+                    font-size: 0.8em;
+                    color: lighten($black,40%);
+                    border-radius: 0.25em;
+                    text-align: center;
+                    padding: 2px 5px;
+                    &.select {
+                        background: $col-dot-red;
+                        color: $white;
+                    }
+                }
+            }
+            .form-check-brnd {
+                padding-left: 0rem;
+                .containerbox {
+                    display: block;
+                    position: relative;
+                    padding-left: 30px;
+                    margin-bottom: 4px;
+                    cursor: pointer;
+                    -webkit-user-select: none;
+                    -moz-user-select: none;
+                    -ms-user-select: none;
+                    user-select: none;
+                    font-size: 0.9em;
+                    label {
+                        margin-bottom: 0;
+                    }
+                    input {
+                        position: absolute;
+                        opacity: 0;
+                        cursor: pointer;
+                        height: 0;
+                        width: 0;
+                    }
+                    .checkmark {
+                        position: absolute;
+                        top: 1px;
+                        left: 0;
+                        height: 20px;
+                        width: 20px;
+                        background-color: #eee;
+                        border-radius: 5px;
+                    }
+                    &:hover input ~ .checkmark {
+                        background-color: #ccc;
+                    }
+                    input:checked ~ .checkmark {
+                        background-color: $col-dot-blue;
+                    }
+                    .checkmark:after {
+                        content: "";
+                        position: absolute;
+                        display: none;
+                    }
+                    input:checked ~ .checkmark:after {
+                        display: block;
+                    }
+                    .checkmark:after {
+                        left: 9px;
+                        top: 5px;
+                        width: 5px;
+                        height: 10px;
+                        border: solid white;
+                        border-width: 0 3px 3px 0;
+                        -webkit-transform: rotate(45deg);
+                        -ms-transform: rotate(45deg);
+                        transform: rotate(45deg);
+                    }
+                }
+            }
+            .left-title-on-card {
+                color: lighten($black,80%);
+                margin-bottom: 15px;
+            }
+        }
+    }
+    footer {
+        background: darken($black,80%);
+        color: $white;
+        .footer-links {
+            list-style: none;
+            %icons-class {
+                width: 40px;
+                height: 40px;
+                display: block;
+            }
+            li {
+                display: inline-block;
+                font-size: 1.4em;
+                font-weight: 500;
+                padding: 1.5em 2.1em;
+                a.icons-instagram {
+                    @extend %icons-class;
+                    background: url(./icon/icons-instagram-black.png) 0 0 no-repeat;
+                    &:hover {
+                        @include flip();
+                        background: url(./icon/icons-instagram-black.png) 0 0 no-repeat;
+                    }
+                }
+                a.icons-pinterest {
+                    @extend %icons-class;
+                    background: url(./icon/icons-pinterest-black.png) 0 0 no-repeat;
+                    &:hover {
+                        @include flip();
+                        background: url(./icon/icons-pinterest-black.png) 0 0 no-repeat;
+                    }
+                }
+                a.icons-twitter {
+                    @extend %icons-class;
+                    background: url(./icon/icons-twitter-black.png) 0 0 no-repeat;
+                    &:hover {
+                        @include flip();
+                        background: url(./icon/icons-twitter-black.png) 0 0 no-repeat;
+                    }
+                }
+                a.icons-facebook {
+                    @extend %icons-class;
+                    background: url(./icon/icons-facebook-black.png) 0 0 no-repeat;
+                    &:hover {
+                        @include flip();
+                        background: url(./icon/icons-facebook-black.png) 0 0 no-repeat;
+                    }
+                }
+            }
+        }
+    }
+    .header-image {
+        background: #A3A19E url(./Images/Images-modal4.png) right top no-repeat;
+        height: 336px;
+    }
 }
